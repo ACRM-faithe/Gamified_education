@@ -14,10 +14,8 @@ export function load() {
   return data;
 }
 
-export function setData(newData) {
+export function setData(newData: dataStoreObj) {
   data = newData;
   const json = JSON.stringify(newData, null, 4);
   fs.writeFileSync('data.json', json, { flag: 'w' });
 }
-
-export { data };
