@@ -1,7 +1,7 @@
 export interface UserDetails {
     user: {
         userId: number,
-        username: string, 
+        username: string,
         name: string,
         email: string,
         class: string, //class name
@@ -22,7 +22,7 @@ export interface Classroom {
     name: string,
     students: User[],
     teacher: User[],
-    classroomId: number, 
+    classroomId: number,
 }
 
 export interface Task {
@@ -34,6 +34,6 @@ export interface Task {
 
 export interface dataStoreObj {
     classrooms: Classroom[],
-    classroomId: number[],
-    userId: number[],
+    classroomIds: number[],
+    userIds: number[],
 }

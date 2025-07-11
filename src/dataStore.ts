@@ -5,13 +5,14 @@ const fs = require('fs');
 
 export let data: dataStoreObj = {
     classrooms: [],
-    classroomId: [],
-    userId: [],
+    classroomIds: [],
+    userIds: [],
 };
 
 export function load() {
     const json = fs.readFileSync('data.json', { flag: 'r' });
     data = JSON.parse(json.toString());
+    return data;
 }
 
 
