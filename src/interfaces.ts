@@ -21,6 +21,7 @@ export interface Classroom {
   name: string;
   students: User[];
   teacher: User[];
+  leaderboard: { id: number; points: number; name: string; }[];
   classroomId: number;
 }
 
