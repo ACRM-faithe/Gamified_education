@@ -6,6 +6,13 @@ export interface UserDetails {
     email: string;
     class: string; //class name
   };
+  user: {
+    userId: number;
+    username: string;
+    name: string;
+    email: string;
+    class: string; //class name
+  };
 }
 
 export interface User {
@@ -23,6 +30,10 @@ export interface Classroom {
   students: User[];
   teacher: User[];
   classroomId: number;
+  name: string;
+  students: User[];
+  teacher: User[];
+  classroomId: number;
 }
 
 export interface Task {
@@ -34,6 +45,6 @@ export interface Task {
 
 export interface dataStoreObj {
   classrooms: Classroom[];
-  classroomId: number[];
-  userId: number[];
+  classroomIds: number[];
+  userIds: number[];
 }
