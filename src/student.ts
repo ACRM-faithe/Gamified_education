@@ -33,7 +33,14 @@ any id's in classroom: ${classroom.name}`);
     return student;
 }
 
+//userId: number,
+//username: string,
+//name: string,
+//email: string,
+//password: string,
+//sessions: string[],
+//classroom: Classroom,
 
-function updateStudent(studentid): boolean {
+function updateStudent(studentid: number,): boolean {
 
 }
