@@ -1,7 +1,13 @@
+import { dataStoreObj } from "./interfaces";
+
 const fs = require('fs');
 
 
-export let data = {};
+export let data: dataStoreObj = {
+    classrooms: [],
+    classroomId: [],
+    userId: [],
+};
 
 export function load() {
     const json = fs.readFileSync('data.json', { flag: 'r' });
