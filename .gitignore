@@ -1,4 +1,5 @@
 *.json
+*.js
 !package.json
 # Ignore dataStore.json
 dataStore.json
