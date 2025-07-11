@@ -34,6 +34,6 @@ export interface Task {
 
 export interface dataStoreObj {
     classrooms: Classroom[],
-    classroomId: number[],
-    userId: number[],
+    classroomIds: number[],
+    userIds: number[],
 }
