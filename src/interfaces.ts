@@ -6,13 +6,6 @@ export interface UserDetails {
     email: string;
     class: string; //class name
   };
-  user: {
-    userId: number;
-    username: string;
-    name: string;
-    email: string;
-    class: string; //class name
-  };
 }
 
 export interface User {
@@ -26,10 +19,6 @@ export interface User {
 }
 
 export interface Classroom {
-  name: string;
-  students: User[];
-  teacher: User[];
-  classroomId: number;
   name: string;
   students: User[];
   teacher: User[];

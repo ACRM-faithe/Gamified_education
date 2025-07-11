@@ -1,7 +1,5 @@
 import { dataStoreObj } from './interfaces';
 
-import { dataStoreObj } from './interfaces';
-
 const fs = require('fs');
 
 export let data: dataStoreObj = {
