@@ -1,29 +1,28 @@
 export interface UserDetails {
   user: {
-    userId: string;
+    userId: number;
     username: string;
     name: string;
     email: string;
-    class: string;
+    class: string; //class name
   };
 }
 
 export interface User {
-  userId: string;
-  username: {};
+  userId: number;
+  username: string;
   name: string;
   email: string;
-  class: string;
   password: string;
   sessions: string[];
   classroom: Classroom;
 }
 
 export interface Classroom {
-  id: number;
   name: string;
   students: User[];
   teacher: User[];
+  classroomId: number;
 }
 
 export interface Task {
@@ -35,4 +34,6 @@ export interface Task {
 
 export interface dataStoreObj {
   classrooms: Classroom[];
+  classroomId: number[];
+  userId: number[];
 }
