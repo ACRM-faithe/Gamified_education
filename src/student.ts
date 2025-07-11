@@ -1,5 +1,5 @@
 import { Classroom, User } from "./interfaces";
-import { data } from "./dataStore";
+import { data, setData } from "./dataStore";
 
 
 //get a student
@@ -70,6 +70,7 @@ function updateStudent(studentid: number, classroomId: number,
         student.classroom = changes.classroom;
     }
 
+    setData(data);
     return true;
 }
 
@@ -83,6 +84,7 @@ function changePassword(studentid: number, classroomId: number,
 
     if (student.password === oldPassword) {
         student.password = newPassword;
+        setData(data);
         return true;
     }
     return false;
@@ -113,6 +115,7 @@ any id's in classroom: ${classroom.name}`);
 
     data.userIds.splice(data.userIds.indexOf(student.userId), 1);
     classroom.students.splice(classroom.students.indexOf(student), 1);
+    setData(data);
     return true;
 }
 
