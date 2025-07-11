@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 
-let data = {};
+export let data = {};
 
 export function load() {
     const json = fs.readFileSync('data.json', { flag: 'r' });
