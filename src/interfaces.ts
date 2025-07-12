@@ -14,7 +14,7 @@ export interface User {
   email: string;
   password: string;
   sessions: string[];
-  classroom: Classroom;
+  classroom?: Classroom;
 }
 
 export interface Classroom {

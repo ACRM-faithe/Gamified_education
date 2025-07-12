@@ -119,3 +119,6 @@ any id's in classroom: ${classroom.name}`);
     return true;
 }
 
+export {
+    getStudent, updateStudent, changePassword, removeStudent
+};
