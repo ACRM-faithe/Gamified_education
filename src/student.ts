@@ -44,7 +44,6 @@ function updateStudent(studentid: number, classroomId: number,
     changes: {
         name?: string,
         email?: string,
-        password?: string,
         classroom?: Classroom
     }): boolean {
 
@@ -60,10 +59,6 @@ function updateStudent(studentid: number, classroomId: number,
 
     if (changes.email) {
         student.email = changes.email;
-    }
-
-    if (changes.password) {
-        student.password = changes.password;
     }
 
     if (changes.classroom) {
